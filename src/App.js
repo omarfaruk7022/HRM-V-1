@@ -4,7 +4,6 @@ import { Route, Routes } from "react-router-dom";
 import Home from "./Pages/Home";
 import Header from "./components/Header";
 import Dashboard from "./Pages/Dashboard/Dashboard";
-
 import Layout from "./components/Layout";
 import Employees from "./Pages/Dashboard/Employees";
 import Leave from "./Pages/Dashboard/Leave";
