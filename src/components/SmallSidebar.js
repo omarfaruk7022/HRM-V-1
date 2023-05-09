@@ -1,8 +1,6 @@
 import React from "react";
 import { AiOutlineMenuUnfold } from "react-icons/ai";
 import { Link } from "react-router-dom";
-import { MdOutlineSpaceDashboard } from "react-icons/md";
-import { BsFillPeopleFill } from "react-icons/bs";
 import leave from "../Images/Leave.png";
 import employees from "../Images/employees.png";
 import dashboard from "../Images/dashboard.png";
