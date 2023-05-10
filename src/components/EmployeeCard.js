@@ -21,9 +21,9 @@ export default function EmployeeCard() {
     <div>
       <div className="flex flex-wrap gap-10 justify-center items-center mt-10">
         {users.map((user) => (
-          <div className="w-72 p-10 h-96  rounded-md shadow-md dark:bg-gray-900 dark:text-gray-50">
+          <div className="w-72 p-10 h-[400px]  rounded-md shadow-lg  ">
             <img
-              src={user.photo}
+              src={user.img}
               alt=""
               className="m-auto rounded-lg w-48 h-52  dark:bg-gray-500"
             />

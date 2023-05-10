@@ -14,24 +14,27 @@ export default function EmployeeDetails() {
       .then((data) => setData(data));
   }, [id]);
 
-  if(data === undefined){
-    return <Loader/>
+  if (data === undefined) {
+    return <Loader />;
   }
 
   return (
-    <div>
-      <div className="px-36 mt-10">
-        <article class="rounded-sm bg-white ring ring-indigo-50 p-12 ">
-          <div class="flex items-start sm:gap-8">
+    <div className="">
+      <div className="w-[100%]">
+        <div class="rounded-sm  bg-white ring   ring-indigo-50 p-12 ">
+          <strong class="rounded  border border-indigo-500 bg-indigo-500 px-3 py-1.5 text-[10px] font-medium text-white">
+            id #101
+          </strong>
+          <div class="flex items-center sm:gap-8">
             <div aria-hidden="true">
-              {data?.photo ? (
+              {data?.img ? (
                 <img
-                  className="rounded-lg w-48"
-                  src={data?.photo}
+                  className="rounded-lg w-40"
+                  src={data?.img}
                   alt="Profile"
                 />
               ) : (
-                <div className="relative flex-shrink-0">
+                <div className="flex-shrink-0">
                   <img
                     src={blankUser}
                     alt=""
@@ -48,22 +51,11 @@ export default function EmployeeDetails() {
             </div>
 
             <div>
-              <strong class="rounded border border-indigo-500 bg-indigo-500 px-3 py-1.5 text-[10px] font-medium text-white">
-                id #101
-              </strong>
-
               <h3 class="mt-4 text-lg font-medium sm:text-xl">
                 <h2 className="">{data?.name}</h2>
               </h3>
 
-              <p class="mt-1 text-sm text-gray-700 hidden lg:block">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam
-                nulla amet voluptatum sit rerum, atque, quo culpa ut
-                necessitatibus eius suscipit eum accusamus, aperiam voluptas
-                exercitationem facere aliquid fuga. Sint.
-              </p>
-
-              <div>
+              <div className="">
                 <p>
                   <span className="text-green-500 font-bold text-sm">
                     Phone :
@@ -87,13 +79,13 @@ export default function EmployeeDetails() {
                     Joining Date :
                   </span>{" "}
                   <span className="text-sm font-bold">
-                    {data?.joining_date}
+                    {data?.joiningDate}
                   </span>
                 </p>
               </div>
             </div>
           </div>
-        </article>
+        </div>
       </div>
     </div>
   );

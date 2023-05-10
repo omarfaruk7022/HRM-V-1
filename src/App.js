@@ -5,11 +5,12 @@ import { Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import Dashboard from "./Pages/Dashboard/Dashboard";
 import Layout from "./components/Layout";
-import Employees from "./Pages/Dashboard/Employees";
+import Employees from "./Pages/Employees/Employees";
 import Leave from "./Pages/Dashboard/Leave";
 import EmployeeDetails from "./components/EmployeeDetails";
 import NotFound from "./components/NotFound";
 import Footer from "./components/Footer";
+import AddEmployee from "./Pages/Employees/AddEmployee";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           
             <Route path="/" element={<Dashboard />} />
             <Route path="/employees" element={<Employees/>} />
+            <Route path="/addEmployee" element={<AddEmployee/>} />
             <Route path="/leave" element={<Leave/>} />
             <Route path="*" element={<NotFound/>} />
             <Route path="/employees/employeeDetails/:id" element={<EmployeeDetails/>} />

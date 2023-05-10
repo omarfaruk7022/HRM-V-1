@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Sidebar } from "primereact/sidebar";
-import leave from "../Images/Leave.png";
-import employees from "../Images/employees.png";
-import dashboard from "../Images/dashboard.png";
+import MobileMenu from "./MobileMenu";
 
 export default function Header() {
   const [visible, setVisible] = useState(false);
@@ -43,42 +41,20 @@ export default function Header() {
             <div class="hidden flex-1 items-center justify-end gap-4 lg:flex">
               <a
                 class="rounded-lg bg-gray-100 px-5 py-2 text-sm font-medium text-gray-500"
-                href=""
+                href="/"
               >
                 Log in
               </a>
 
               <a
                 class="rounded-lg bg-blue-600 px-5 py-2 text-sm font-medium text-white"
-                href=""
+                href="/"
               >
                 Sign up
               </a>
             </div>
             <Sidebar visible={visible} onHide={() => setVisible(false)}>
-              <div className=" p-2 h-[600px] ">
-                <Link className="block font-bold mt-5 " to="/">
-                  <p onClick={() => setVisible(false)}>
-                    <img className="w-7  mr-2 inline" src={dashboard} alt="" />
-                    <span>Dashboard</span>
-                  </p>
-                </Link>
-                <Link
-                  className="block font-bold  my-2"
-                  to="/employees"
-                >
-                  <button onClick={() => setVisible(false)}>
-                    <img className="w-7  inline mr-2" src={employees} alt="" />
-                    <span>Employees</span>
-                  </button>
-                </Link>
-                <Link className="block font-bold my-2" to="/leave">
-                  <button onClick={() => setVisible(false)}>
-                    <img className="w-7  inline mr-2" src={leave} alt="" />
-                    <span>Leave</span>
-                  </button>
-                </Link>
-              </div>
+             <MobileMenu/>
             </Sidebar>
           </div>
         </div>
