@@ -1,12 +1,15 @@
 import "./App.css";
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Home from "./Pages/Home";
+
 import Header from "./components/Header";
 import Dashboard from "./Pages/Dashboard/Dashboard";
 import Layout from "./components/Layout";
 import Employees from "./Pages/Dashboard/Employees";
 import Leave from "./Pages/Dashboard/Leave";
+import EmployeeDetails from "./components/EmployeeDetails";
+import NotFound from "./components/NotFound";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -18,13 +21,16 @@ function App() {
         </div>
         <div>
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/dashboard" element={<Dashboard />} />
-            <Route path="/dashboard/employees" element={<Employees/>} />
-            <Route path="/dashboard/leave" element={<Leave/>} />
+          
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/employees" element={<Employees/>} />
+            <Route path="/leave" element={<Leave/>} />
+            <Route path="*" element={<NotFound/>} />
+            <Route path="/employees/employeeDetails/:id" element={<EmployeeDetails/>} />
           </Routes>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }

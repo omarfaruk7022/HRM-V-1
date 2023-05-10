@@ -1,7 +1,10 @@
-import React from 'react'
+import React from "react";
+import HomeChart from "../../components/HomeChart";
 
 export default function Dashboard() {
   return (
-    <div>This is Dashboard</div>
-  )
+    <div>
+      <HomeChart />
+    </div>
+  );
 }

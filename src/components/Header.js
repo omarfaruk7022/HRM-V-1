@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { Sidebar } from "primereact/sidebar";
-import { Button } from "primereact/button";
-import { AiOutlineMenuFold } from "react-icons/ai";
 import leave from "../Images/Leave.png";
 import employees from "../Images/employees.png";
 import dashboard from "../Images/dashboard.png";
@@ -38,7 +36,7 @@ export default function Header() {
               class="hidden gap-8 text-sm font-medium lg:flex"
             >
               <Link class="text-gray-500" to="/">
-                Home
+               Dashboard
               </Link>
             </nav>
 
@@ -59,7 +57,7 @@ export default function Header() {
             </div>
             <Sidebar visible={visible} onHide={() => setVisible(false)}>
               <div className=" p-2 h-[600px] ">
-                <Link className="block font-bold mt-5 " to="/dashboard">
+                <Link className="block font-bold mt-5 " to="/">
                   <p onClick={() => setVisible(false)}>
                     <img className="w-7  mr-2 inline" src={dashboard} alt="" />
                     <span>Dashboard</span>
@@ -67,14 +65,14 @@ export default function Header() {
                 </Link>
                 <Link
                   className="block font-bold  my-2"
-                  to="/dashboard/employees"
+                  to="/employees"
                 >
                   <button onClick={() => setVisible(false)}>
                     <img className="w-7  inline mr-2" src={employees} alt="" />
                     <span>Employees</span>
                   </button>
                 </Link>
-                <Link className="block font-bold my-2" to="/dashboard/leave">
+                <Link className="block font-bold my-2" to="/leave">
                   <button onClick={() => setVisible(false)}>
                     <img className="w-7  inline mr-2" src={leave} alt="" />
                     <span>Leave</span>
