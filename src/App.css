@@ -17,6 +17,13 @@ canvas {
   height: 600px !important;
 }
 
+.p-sidebar-header{
+  background-color: #111121;
+}
+.p-sidebar-content{
+  background-color: #111121;
+}
+
 @media screen and (max-width: 600px) {
   canvas {
     width: 100vw !important;

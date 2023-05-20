@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Chart } from "primereact/chart";
+import img from "../Images/hero-pattern-opacity.png"
+
 
 export default function HomeChart() {
   const [chartData, setChartData] = useState({});
@@ -75,11 +77,18 @@ export default function HomeChart() {
   }, []);
 
   return (
-    <div>
+    <div className="">
       <div className="card">
-        <Chart className="" type="line" data={chartData} options={chartOptions} />
+        <div className="absolute">
+          <img src={img} alt="img" />
+        </div>
+        <Chart
+          className=""
+          type="line"
+          data={chartData}
+          options={chartOptions}
+        />
       </div>
     </div>
-    
   );
 }

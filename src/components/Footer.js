@@ -3,23 +3,23 @@ import React from "react";
 export default function Footer() {
   return (
     <div>
-      <div class="p-8 mt-16 border-t border-gray-100 sm:flex sm:items-center sm:justify-between lg:mt-24">
+      <div class="p-8 mt-16 border-gray-100 sm:flex sm:items-center sm:justify-between lg:mt-24">
         <nav aria-label="Footer Navigation - Support">
           <ul class="flex flex-wrap justify-center gap-4 text-xs lg:justify-end">
             <li>
-              <a href="#" class="text-gray-500 transition hover:opacity-75">
+              <a href="#" class="text-gray-300 transition hover:opacity-75">
                 Terms & Conditions
               </a>
             </li>
 
             <li>
-              <a href="#" class="text-gray-500 transition hover:opacity-75">
+              <a href="#" class="text-gray-300 transition hover:opacity-75">
                 Privacy Policy
               </a>
             </li>
 
             <li>
-              <a href="#" class="text-gray-500 transition hover:opacity-75">
+              <a href="#" class="text-gray-300 transition hover:opacity-75">
                 Cookies
               </a>
             </li>
@@ -32,7 +32,7 @@ export default function Footer() {
               href="/"
               rel="noreferrer"
               target="_blank"
-              class="text-gray-700 transition hover:opacity-75"
+              class="text-gray-300 transition hover:opacity-75"
             >
               <span class="sr-only">Facebook</span>
 
@@ -56,7 +56,7 @@ export default function Footer() {
               href="/"
               rel="noreferrer"
               target="_blank"
-              class="text-gray-700 transition hover:opacity-75"
+              class="text-gray-300 transition hover:opacity-75"
             >
               <span class="sr-only">Instagram</span>
 
@@ -80,7 +80,7 @@ export default function Footer() {
               href="/"
               rel="noreferrer"
               target="_blank"
-              class="text-gray-700 transition hover:opacity-75"
+              class="text-gray-300 transition hover:opacity-75"
             >
               <span class="sr-only">Twitter</span>
 
@@ -100,7 +100,7 @@ export default function Footer() {
               href="/"
               rel="noreferrer"
               target="_blank"
-              class="text-gray-700 transition hover:opacity-75"
+              class="text-gray-300 transition hover:opacity-75"
             >
               <span class="sr-only">GitHub</span>
 
@@ -124,7 +124,7 @@ export default function Footer() {
               href="/"
               rel="noreferrer"
               target="_blank"
-              class="text-gray-700 transition hover:opacity-75"
+              class="text-gray-300 transition hover:opacity-75"
             >
               <span class="sr-only">Dribbble</span>
 

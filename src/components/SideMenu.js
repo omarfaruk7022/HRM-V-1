@@ -7,16 +7,12 @@ import { AiOutlineUserAdd } from "react-icons/ai";
 export default function SideMenu({ toggle, setToggle }) {
   return (
     <div className="hidden lg:block">
-      <div class="flex h-screen flex-col justify-between border-e bg-white">
+      <div class="flex h-screen flex-col justify-between  ">
         <div class="px-4 py-6">
-          <span class="grid h-10 w-32 place-content-center rounded-lg bg-gray-100 text-xs text-gray-600">
-            Logo
-          </span>
-
           <nav aria-label="Main Nav" class="mt-6 flex flex-col space-y-1">
             <Link
               to="/"
-              class="flex items-center gap-2 rounded-lg bg-gray-100 px-4 py-2 text-gray-700"
+              class="flex items-center gap-2 rounded-lg px-4 py-2 text-gray-300 hover:bg-[#24243a] hover:text-gray-400"
             >
               <MdOutlineSpaceDashboard className="text-[20px]" />
 
@@ -24,7 +20,7 @@ export default function SideMenu({ toggle, setToggle }) {
             </Link>
 
             <details class="group [&_summary::-webkit-details-marker]:hidden">
-              <summary class="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700">
+              <summary class="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-300 hover:bg-[#24243a] hover:text-gray-400">
                 <div class="flex items-center gap-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -63,7 +59,7 @@ export default function SideMenu({ toggle, setToggle }) {
               <nav aria-label="Teams Nav" class="mt-2 flex flex-col px-4">
                 <Link
                   to="/employees"
-                  class="flex items-center gap-2 rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+                  class="flex items-center gap-2 rounded-lg px-4 py-2 text-gray-300 hover:bg-[#24243a] hover:text-gray-400"
                 >
                   <MdFormatListNumberedRtl className="text-[20px]" />
 
@@ -72,18 +68,18 @@ export default function SideMenu({ toggle, setToggle }) {
 
                 <Link
                   to="/addEmployee"
-                  class="flex items-center gap-2 rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+                  class="flex items-center gap-2 rounded-lg px-4 py-2 text-gray-300 hover:bg-[#24243a] hover:text-gray-400"
                 >
                   <AiOutlineUserAdd />
 
-                  <span class="text-sm font-medium"> Add  </span>
+                  <span class="text-sm font-medium"> Add </span>
                 </Link>
               </nav>
             </details>
 
             <a
               href="/"
-              class="flex items-center gap-2 rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+              class="flex items-center gap-2 rounded-lg px-4 py-2 text-gray-300 hover:bg-[#24243a] hover:text-gray-400"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -105,7 +101,7 @@ export default function SideMenu({ toggle, setToggle }) {
 
             <a
               href="/"
-              class="flex items-center gap-2 rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+              class="flex items-center gap-2 rounded-lg px-4 py-2 text-gray-300 hover:bg-[#24243a] hover:text-gray-400"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -126,7 +122,7 @@ export default function SideMenu({ toggle, setToggle }) {
             </a>
 
             <details class="group [&_summary::-webkit-details-marker]:hidden">
-              <summary class="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700">
+              <summary class="flex cursor-pointer items-center justify-between rounded-lg px-4 py-2 text-gray-300 hover:bg-[#24243a] hover:text-gray-400">
                 <div class="flex items-center gap-2">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -165,7 +161,7 @@ export default function SideMenu({ toggle, setToggle }) {
               <nav aria-label="Account Nav" class="mt-2 flex flex-col px-4">
                 <a
                   href="/"
-                  class="flex items-center gap-2 rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+                  class="flex items-center gap-2 rounded-lg px-4 py-2 text-gray-300 hover:bg-[#24243a] hover:text-gray-400"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -187,7 +183,7 @@ export default function SideMenu({ toggle, setToggle }) {
 
                 <a
                   href="/"
-                  class="flex items-center gap-2 rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+                  class="flex items-center gap-2 rounded-lg px-4 py-2 text-gray-300 hover:bg-[#24243a] hover:text-gray-400"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -210,7 +206,7 @@ export default function SideMenu({ toggle, setToggle }) {
                 <form action="/logout">
                   <button
                     type="submit"
-                    class="flex w-full items-center gap-2 rounded-lg px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-700"
+                    class="flex w-full items-center gap-2 rounded-lg px-4 py-2 text-gray-300 hover:bg-[#24243a] hover:text-gray-400"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
